@@ -8,11 +8,11 @@ When service start a ipset hash:ip will be create for each rule and an iptables 
 
 When service stop all iptables and ipset will be removed.
 
-To install clone this repository to you home and than run as root the install.sh that is located under teh Install directory
+To install clone this repository to your home and than run as root the install.sh that is located under the Install directory
 
 To remove run as root the uninstall.sh
 
-After install configurations are under /etc/dynamic-iptablesL
+After install configurations are under /etc/dynamic-iptables
 
 To start:
 ```bash
