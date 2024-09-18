@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicIPTables", "DynamicIPTables\DynamicIPTables.csproj", "{D1C6D29B-DF13-49F0-B90C-0D6E5A821207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicIPTablesTest", "DynamicIPTablesTest\DynamicIPTablesTest.csproj", "{E91F5291-4777-4FA2-AD55-A6B94A7EFF09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1C6D29B-DF13-49F0-B90C-0D6E5A821207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C6D29B-DF13-49F0-B90C-0D6E5A821207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C6D29B-DF13-49F0-B90C-0D6E5A821207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C6D29B-DF13-49F0-B90C-0D6E5A821207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E91F5291-4777-4FA2-AD55-A6B94A7EFF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E91F5291-4777-4FA2-AD55-A6B94A7EFF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E91F5291-4777-4FA2-AD55-A6B94A7EFF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E91F5291-4777-4FA2-AD55-A6B94A7EFF09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+[Unit]
+Description=Dynamic ip rules for iptables using ipset
+After=network.target
+
+[Service]
+ExecStart=/opt/dynamic-iptables/DynamicIPTables
+WorkingDirectory=/opt/dynamic-iptables
+Type=notify
+User=dynamiciptables
+Group=dynamiciptables
+
+[Install]
+WantedBy=multi-user.target

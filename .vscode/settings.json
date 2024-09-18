@@ -1,0 +1,18 @@
+{
+    "cSpell.words": [
+        "Coravel",
+        "dports",
+        "dynamiciptables",
+        "icmpv",
+        "IDNS",
+        "inet",
+        "multiport",
+        "NOPASSWD",
+        "pchouse",
+        "sctp",
+        "Serilog",
+        "udplite"
+    ],
+    "dotnet-test-explorer.testProjectPath": "**/*Test.csproj",
+    "files.autoSave": "afterDelay"
+}

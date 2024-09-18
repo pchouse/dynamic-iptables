@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug DynamicIPTables",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/DynamicIPTables/bin/Debug/net8.0/DynamicIPTables.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "logging": {
+                "diagnosticsLog": {
+                    "protocolMessages": false
+                }
+            },
+            "env": {
+                "DOTNET_ENVIRONMENT": "Development",
+                "PROJECT_FOLDER": "${workspaceFolder}/DynamicIPTables"
+            },
+        }
+    ]
+    
+}

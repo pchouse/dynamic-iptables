@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-DynamicIPTables-79521f2e-57d0-4da7-a4f4-23d3adc34347</UserSecretsId>
+    <RootNamespace>PChouse.DynamicIPTables</RootNamespace>
+    <SystemdServiceName>dynamic-iptables</SystemdServiceName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coravel" Version="5.0.4" />
+    <PackageReference Include="IniFile.NET" Version="1.6.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="8.0.0" />
+    <PackageReference Include="Serilog" Version="4.0.1" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="2.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+  </ItemGroup>
+</Project>
