@@ -12,6 +12,7 @@ fi
 # Get self path
 name="dynamic-iptables"
 user=dynamiciptables
+sudoers="/etc/sudoers.d/${user}"
 logdir=/var/log/$name
 install_dir=/opt/$name
 
@@ -51,7 +52,13 @@ echo "Reload the systemd daemon"
 
 systemctl daemon-reload
 
+if [ -f $sudoers ]; then
+    echo "Delete sudoers file ${sudoers}"
+    rm $sudoers
+fi
+
 echo "Remove user and group if exist dynamiciptables"
+
 if id -u $user &>/dev/null; then
     userdel $user
 fi
