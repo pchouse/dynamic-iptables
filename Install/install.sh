@@ -4,6 +4,7 @@
 SELF_PATH=$(dirname "$(readlink -f "$0")")
 name="dynamic-iptables"
 user=dynamiciptables
+sudoers="/etc/sudoers.d/${user}"
 framework="net8.0"
 runtime="linux-x64"
 project_path="${SELF_PATH}/../DynamicIPTables"
@@ -76,6 +77,15 @@ if [ $? -ne 0 ]; then
     echo "Failed to create user $user"
     exit 1
 fi
+
+if [ -f $sudoers ]; then
+    echo "Sudoers file exists ${sudoers}, going to delete"
+    rm $sudoers
+fi
+
+echo "Create sudoers file for user ${user}"
+
+echo "${user} ALL=(root) NOPASSWD: /usr/sbin/iptables, /usr/sbin/ip6tables, /usr/sbin/ipset" > $sudoers
 
 echo "Create instalation directory if not exist $install_dir and owner user $user"
 
